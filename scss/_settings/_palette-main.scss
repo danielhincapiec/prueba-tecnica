@@ -1,0 +1,30 @@
+.palette-main {
+  // inks
+  --ink-1: #00bcb7;
+  --ink-2: #3a8d8e;
+  --ink-3: #f48362;
+  --ink-4: #ef3e40;
+  --ink-white: white;
+  --ink-black: black;
+  --ink-grey-1: #e7e7e7;
+  --ink-grey-5: #5f5f5f;
+  --ink-grey-7: #464040;
+  --ink-grey-9: #272727;
+
+  // fonts
+  --ink-text-title: var(--ink-1);
+  --ink-text-subtitle: var(--ink-black);
+  --ink-text: var(--ink-grey-9);
+
+  // links
+  --ink-link: var(--ink-4);
+  --ink-link-hover: var(--ink-3);
+  --ink-link-active: var(--ink-4);
+  --ink-button: var(--ink-4);
+  --ink-button-hover: var(--ink-3);
+
+  // backgrounds
+  --ink-bg-basic: var(--ink-1);
+  --ink-bg: var(--ink-white);
+  --ink-bg-alt: var(--ink-grey-1);
+}

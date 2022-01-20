@@ -1,0 +1,20 @@
+// -------------
+// # constructor vars colors
+// -------------
+
+@mixin varsColors($palette-name, $colors) {
+  #{$palette-name} {
+    @each $name, $color in $colors {
+      --#{$name}: #{$color};
+    }
+  }
+
+  @each $name, $color in $colors {
+    #{$palette-name} .color-#{$name} {
+      color: var(--#{$name});
+    }
+    #{$palette-name} .bg-#{$name} {
+      background-color: var(--#{$name});
+    }
+  }
+}

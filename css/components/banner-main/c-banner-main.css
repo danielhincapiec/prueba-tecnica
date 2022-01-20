@@ -1,0 +1,7 @@
+.c-banner-main {
+  border: 2px solid cyan;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr minmax(0, 1080px) 1fr;
+  grid-template-columns: 1fr minmax(0, 1080px) 1fr;
+}

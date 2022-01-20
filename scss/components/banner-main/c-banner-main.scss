@@ -1,0 +1,11 @@
+.c-banner-main {
+  border: 2px solid cyan;
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 1080px) 1fr;
+
+  &__menu {
+  }
+
+  &__leyend {
+  }
+}

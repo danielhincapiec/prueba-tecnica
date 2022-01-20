@@ -1,0 +1,18 @@
+.c-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--ink-2);
+
+  @include media("max", 980px) {
+    flex-direction: column;
+  }
+
+  p {
+    margin-bottom: 0;
+
+    @include media("max", 980px) {
+      margin-bottom: 1rem;
+    }
+  }
+}

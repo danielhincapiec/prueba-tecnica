@@ -1,0 +1,6 @@
+// -------------
+// # image path
+// -------------
+@function file($file) {
+  @return "#{$pathImage}#{$file}";
+}

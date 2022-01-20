@@ -1,0 +1,13 @@
+.c-layout {
+  &__column {
+    display: grid;
+    grid-template-columns: minmax(1rem, 1fr) minmax(0, var(--bp-lg)) minmax(
+        1rem,
+        1fr
+      );
+
+    & > * {
+      grid-column: 2 / -2;
+    }
+  }
+}

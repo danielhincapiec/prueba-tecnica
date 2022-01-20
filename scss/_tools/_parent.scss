@@ -1,0 +1,39 @@
+// -------------
+// # parent
+// -------------
+
+// .new-class .child
+@mixin parent($parent-selectors) {
+  $current-sequences: &;
+  $new-sequences: ();
+
+  @each $parent-selector in $parent-selectors {
+    @each $sequence in $current-sequences {
+      $current-selector: nth($sequence, -1);
+      $prepended-selector: join($parent-selector, $current-selector);
+      $new-sequence: set-nth($sequence, -1, $prepended-selector);
+      $new-sequences: $current-selector;
+    }
+  }
+
+  @at-root #{$parent-selectors} #{$new-sequences} {
+    @content;
+  }
+}
+
+// .parent .new-class .child
+@mixin between-parent($parent-selector) {
+  $current-sequences: &;
+  $new-sequences: ();
+
+  @each $sequence in $current-sequences {
+    $current-selector: nth($sequence, -1);
+    $prepended-selector: join($parent-selector, $current-selector);
+    $new-sequence: set-nth($sequence, -1, $prepended-selector);
+    $new-sequences: append($new-sequences, $new-sequence, comma);
+  }
+
+  @at-root #{$new-sequences} {
+    @content;
+  }
+}

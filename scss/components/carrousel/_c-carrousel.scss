@@ -1,0 +1,70 @@
+.c-carrousel {
+  grid-column: 1 / -1;
+  grid-row: 1 / -2;
+  z-index: 0;
+  background-color: grey;
+
+  &__item {
+    // border: 2px solid cyan;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.glider-contain {
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+}
+
+.glider-prev {
+  top: 50%;
+  transform: translateY(-50%);
+  width: clamp(1.2rem, 4vw, 1.8rem);
+  height: auto;
+  aspect-ratio: 1 / 1.9;
+  display: block;
+  left: 2rem;
+  background-image: url("../img/arrow-left.png");
+  background-size: cover;
+
+  &:hover,
+  &:focus {
+    background-color: transparent !important;
+  }
+}
+
+.glider-next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: clamp(1.2rem, 4vw, 1.8rem);
+  height: auto;
+  aspect-ratio: 1 / 1.9;
+  display: block;
+  right: 2rem;
+  background-size: cover;
+  background-image: url("../img/arrow-right.png");
+
+  &:hover,
+  &:focus {
+    background-color: transparent !important;
+  }
+}
+
+.glider {
+  height: 100%;
+  overflow: hidden;
+  width: 98vw;
+}
+
+.glider-slide {
+  height: 100%;
+}
+
+.glider-track {
+  height: 100%;
+}

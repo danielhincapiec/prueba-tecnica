@@ -1,0 +1,12 @@
+// decorations
+// borders, shadows, opacitys, rounted
+:root {
+  --border-a: 1px dotted var(--ink-grey-8);
+  --border-b: 5px solid var(--ink-three);
+  --border-c: 10px solid var(--ink-five);
+  --line-icon: 1px;
+
+  // animations
+  --transition-0: all 0.5s ease-in;
+  --transition-1: all 0.1s ease-in;
+}

@@ -1,0 +1,24 @@
+// path
+$pathImage: "build/img/";
+
+// breakpoints
+$breakpoints: (
+  xl2: 96rem,
+  xl: 80rem,
+  lg: 67rem,
+  md: 48rem,
+  tc: 44rem,
+  sm: 27rem,
+);
+
+/*
+
+2xl / 96 / 1536 / 
+xl  / 80 / 1280	/ screen
+lg  / 64 / 1024 / tablet // 
+lg  / 67 / 1072 / tablet // modificado al diseño
+md  / 48 / 768	/ tablet-min
+tc  / 44 / 704	/ column / text column
+sm  / 27 / 432	/ movil	
+
+*/

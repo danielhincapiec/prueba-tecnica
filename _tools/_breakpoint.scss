@@ -1,0 +1,17 @@
+// -------------
+// # breakpoints
+// -------------
+
+:root {
+  @each $point, $value in $breakpoints {
+    --bp-#{$point}: #{$value};
+  }
+}
+
+@each $name, $point in $breakpoints {
+  .width-#{$name} {
+    max-width: var(--bp-#{$name});
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

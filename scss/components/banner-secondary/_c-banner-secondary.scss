@@ -1,0 +1,10 @@
+.c-banner-secondary {
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+    font-family: var(--font-family-base);
+    font-weight: 700;
+    color: var(--ink-3);
+  }
+}
